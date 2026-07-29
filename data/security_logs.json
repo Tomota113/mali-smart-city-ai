@@ -1,0 +1,46 @@
+[
+  {
+    "finding_id": "SEC-BMK-001",
+    "timestamp": "2026-07-29 01:02:05",
+    "agent_id": "AGT-RECON-01",
+    "target": "admin.smartcity.bamako.ml:8443",
+    "category": "Port / Service Sensible Expos\u00e9",
+    "severity": "MOYEN",
+    "cvss": 5.4,
+    "description": "Port d'administration serveur expos\u00e9 sans restriction d'IP.",
+    "microvm": "microvm-node-101"
+  },
+  {
+    "finding_id": "SEC-BMK-002",
+    "timestamp": "2026-07-29 01:06:05",
+    "agent_id": "AGT-SCAN-02",
+    "target": "https://smartcity.bamako.ml/api/v1/auth",
+    "category": "Injection SQL / Bypass Auth",
+    "severity": "CRITIQUE",
+    "cvss": 9.8,
+    "description": "Param\u00e8tre d'authentification vuln\u00e9rable \u00e0 l'injection SQL.",
+    "microvm": "microvm-node-102"
+  },
+  {
+    "finding_id": "SEC-BMK-003",
+    "timestamp": "2026-07-29 01:11:05",
+    "agent_id": "AGT-API-03",
+    "target": "https://smartcity.bamako.ml/api/v1/grid/data",
+    "category": "BOLA / IDOR Authorization",
+    "severity": "\u00c9LEV\u00c9",
+    "cvss": 8.2,
+    "description": "Absence de v\u00e9rification des droits sur les donn\u00e9es IoT du r\u00e9seau.",
+    "microvm": "microvm-node-103"
+  },
+  {
+    "finding_id": "SEC-BMK-004",
+    "timestamp": "2026-07-29 01:16:05",
+    "agent_id": "AGT-SCAN-02",
+    "target": "https://smartcity.bamako.ml/portal",
+    "category": "En-t\u00eates HTTP S\u00e9curit\u00e9 Manquants",
+    "severity": "FAIBLE",
+    "cvss": 3.2,
+    "description": "HSTS et Content-Security-Policy absents de la r\u00e9ponse HTTP.",
+    "microvm": "microvm-node-102"
+  }
+]
